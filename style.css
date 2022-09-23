@@ -1,0 +1,251 @@
+:root {
+    --color-main: #030305;
+    --color-second: #5D5D5F;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* заголовок */
+
+header {
+    border-bottom: 1px solid #E5E5E5;
+    padding: 25px 0;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu input {
+    vertical-align: bottom;
+    margin-right: 244px;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+}
+
+.menu [class^="item-"] {
+    margin-right: 115px;
+}
+
+.menu [class^="item-"] a {
+    font-size: 15px;
+    text-decoration: none;
+    color: var(--color-main);
+}
+
+.menu [class^="item-"] a:hover {
+    border-bottom: 2px solid var(--color-main);
+}
+
+/* 1 секция */
+
+.info { 
+    background-image: url("images/background.png");
+    background-position: center;
+    background-size: cover;
+    padding: 104px 0 154px 0;
+}
+
+.info .title {
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 110%;
+    color: var(--color-main);
+    margin-bottom: 40px;
+}
+
+.info .text {
+    max-width: 502px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    color: var(--color-main);
+    margin-bottom: 40px;
+}
+
+button {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background-color: var(--color-main);
+    padding: 20px;
+    width: 334px;
+    height: 64px;
+    box-sizing: border-box;
+    border: 0;
+    transition: background-color .5s;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: var(--color-second);
+}
+
+/* 2 секция */
+
+.cars {
+    padding: 100px 0;
+}
+
+.subtitle {
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 70px;
+    color: var(--color-main);
+}
+
+.car.items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.car.item {
+    max-width: 384px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.car.item > img{
+    vertical-align: bottom;
+}
+
+.car-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 150%;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--color-main);
+    padding: 15px 0 17px 0;
+}
+
+.car-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.car-info .point {
+    width: 110px;
+    height: 92px;
+    margin: 0 7.5px;
+}
+
+.car-info .point img {
+    margin-bottom: 11px;
+}
+
+.car.item .action {
+    width: 100%;
+    height: 54px;
+    background: var(--color-main);
+    margin-top: 13px;
+}
+
+.car-info .point > div:nth-child(2) {
+    font-weight: 700;
+}
+
+/* 3 секция */
+
+.price {
+    overflow: hidden;
+}
+
+.price .container {
+    position: relative;
+    padding-bottom: 121px;
+}
+
+.price .subtitle {
+    margin-bottom: 20px;
+}
+
+.price .text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    color: var(--color-second);
+    margin-bottom: 60px;
+}
+
+.price-form {
+    max-width: 344px;
+}
+
+.price-form input {
+    box-sizing: border-box;
+
+    /* Auto layout */
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 22px 18px;
+    width: 344px;
+    height: 65px;
+    background: #FFFFFF;
+    border: 1px solid var(--color-second);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    outline: none;
+    margin-bottom: 15px;
+}
+
+.price-form input::placeholder {
+    color: var(--color-second);
+}
+
+.price button {
+    width: 100%;
+}
+
+.price img {
+    position: absolute;
+    bottom: 0;
+    left: 401px;
+}
+
+/* футер */
+
+footer {
+    border-top: 1px solid #E5E5E5;
+    padding: 25px 0;
+}
+
+footer .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.rights {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: right;
+    color: var(--color-main);
+}
