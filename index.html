@@ -31,7 +31,7 @@
                     серийных машин до настоящего гоночного эксклюзива. Воспользуйтесь уникальной возможностью побывать 
                     за рулем настоящей легенды и узнать, на что она способна за пределами гоночной трассы!
                 </div>
-                <button type="submit" class="action">Посмотреть автомобили</button>
+                <button id="button-look" type="submit" class="action">Посмотреть автомобили</button>
             </div>            
         </section>
 
@@ -59,7 +59,7 @@
                                 <div>2</div>
                             </div>  
                         </div>
-                        <button class="action">Забронировать</button>
+                        <button class="action booking">Забронировать</button>
                     </div>
                     <div class="car item">
                         <img src="images/2.png" alt="image-2" class="car-image">
@@ -81,7 +81,7 @@
                                 <div>2</div>
                             </div>  
                         </div>
-                        <button class="action">Забронировать</button>
+                        <button class="action booking">Забронировать</button>
                     </div>
                     <div class="car item">
                         <img src="images/3.png" alt="image-3" class="car-image">
@@ -103,7 +103,7 @@
                                 <div>4</div>
                             </div>  
                         </div>
-                        <button class="action">Забронировать</button>
+                        <button class="action booking">Забронировать</button>
                     </div>
                     <div class="car item">
                         <img src="images/4.png" alt="image-4" class="car-image">
@@ -125,7 +125,7 @@
                                 <div>5</div>
                             </div>  
                         </div>
-                        <button class="action">Забронировать</button>
+                        <button class="action booking">Забронировать</button>
                     </div>
                     <div class="car item">
                         <img src="images/5.png" alt="image-5" class="car-image">
@@ -147,7 +147,7 @@
                                 <div>2</div>
                             </div>  
                         </div>
-                        <button class="action">Забронировать</button>
+                        <button class="action booking">Забронировать</button>
                     </div>
                     <div class="car item">
                         <img src="images/6.png" alt="image-6" class="car-image">
@@ -169,7 +169,7 @@
                                 <div>4</div>
                             </div>  
                         </div>
-                        <button class="action">Забронировать</button>
+                        <button class="action booking">Забронировать</button>
                 </div>
             </div>
             </div>         
@@ -179,13 +179,13 @@
             <div class="container">
                 <h2 class="subtitle">Узнать цену и забронировать</h2>
                 <div class="text">Заполните данные, и мы перезвоним вам для уточнения всех деталей бронирования</div>
-                <form action="#" method="get" class="price-form">
-                    <input type="text" name="name" id="name" placeholder="Ваше имя">
-                    <input type="tel" name="phone" id="phone" placeholder="Ваш телефон">
-                    <input type="text" name="car" id="car" placeholder="Автомобиль, который вас интересует">
-                    <button type="submit" class="action">Узнать цену</button>
+                <form id="price-form" action="#" method="get" class="price-form">
+                    <input type="text" name="name" min="3" id="name" placeholder="Ваше имя" required>
+                    <input type="tel" name="phone" id="phone" min="6" placeholder="Ваш телефон" required>
+                    <input type="text" name="car" id="car" min="3" placeholder="Автомобиль, который вас интересует" required>
+                    <button id="validation" type="submit" class="action">Узнать цену</button>
                 </form>
-                <img src="images/rolls.png" alt="rolls">
+                <img src="images/rolls.png" alt="rolls" class="price-image">
             </div>
         </section>
     </main>

@@ -129,6 +129,10 @@ button:hover {
 
 .car.item > img{
     vertical-align: bottom;
+    transition: all .3s;
+}
+.car.item > img:hover {
+    transform: scale(1.1);
 }
 
 .car-title {
@@ -160,7 +164,7 @@ button:hover {
 .car.item .action {
     width: 100%;
     height: 54px;
-    background: var(--color-main);
+    /*background: var(--color-main);*/
     margin-top: 13px;
 }
 
@@ -217,6 +221,9 @@ button:hover {
 
 .price-form input::placeholder {
     color: var(--color-second);
+}
+.price-form input:focus:invalid {
+    border: 1px solid red;
 }
 
 .price button {
